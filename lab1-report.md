@@ -10,7 +10,7 @@ For each of the cases, there will also be a screenshot showing the command and i
 The `cd` command is used for navigating the filesystem in Linux machines.
 
 ### No argument
-When the `cd` command is ran without any arguments, it will take us to the home directory for the current user. 
+When the `cd` command is ran without any arguments, it will take us to the home directory for the current user. This behavior is expected and it is not an error.
 
 ![cd with no argument](images/lab1/cd-1.png)
 
@@ -34,7 +34,7 @@ working directory: `/home/lecture1`
 The `ls` command lists the items that are in the current working directory.
 
 ### No argument
-When ran with no argument, it will list the items that are in the current working directory.
+When ran with no argument, it will list the items that are in the current working directory. This behavior is expected and it is not an error.
 
 ![ls with no argument](images/lab1/ls-1.png)
 
