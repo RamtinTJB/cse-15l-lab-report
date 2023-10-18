@@ -60,9 +60,11 @@ class StringServer {
 Let's go through what happens in the program when we run it twice with the `/add-message` path:
 
 ![StringServer add-message Hello](images/lab2/StringServer-1.png)
+
 When the request is sent to the server, the `handleRequest` method will be called. The `url` parameter passed to this method will have the value "add-message" in its path field and the value "s=Hello" in its query field. Also, since this is the first time we are adding a message after running the server, the `strings` ArrayList will start out empty and will be `["Hello"]` after the method is fully executed.
 
 ![StringServer add-message How are you](images/lab2/StringServer-2.png)
+
 When this request is sent to the server, again, the `handleRequest` method will be called. This time, `url` will have the value "s=How are you" in its query field while having the same path as last time. In this method, the string "How are you" will be appended to the `strings` ArrayList and so the `strings` field in our class will be `["Hello", "How are you"]` when all is said and done.
 
 ## SSH Authentication using public/private keys
@@ -81,4 +83,4 @@ And here is me logging in the `ieng6` machine without being asked to type my pas
 
 ## Something I learned in weeks 2 and 3
 
-I never knew about the fact that I could ssh into a remove machine without inputting my password if I copy my public key over to the server. This makes logging into these servers much more convenient.
+I never knew about the fact that I could ssh into a remote machine without inputting my password if I copy my public key over to the server. This makes logging into these servers much more convenient.
