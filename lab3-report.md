@@ -75,6 +75,7 @@ For this, I will research 4 more advanced concepts for the `grep` command.
 We can use `-r` option to recursively search the contents of files within a directory for a pattern.
 
 - Example 1:
+
 ```console
 > grep -r "unexpected groupings" technical/
 
@@ -83,6 +84,7 @@ technical//biomed/1471-2164-3-4.txt:          unexpected groupings can be recove
 ```
 
 - Example 2:
+
 ```console
 > grep -r "archaeologist" technical/
 
@@ -98,6 +100,7 @@ Source: `man grep`
 According to `man grep`, the `-A` option prints _num_ lines of trailing context after each match and `-B` prints _num_ lines of leading context before each match. Let's see a couple of examples.
 
 - Example 1:
+
 ```console
 > grep -A 3 "archaeologist" technical/plos/pmed.0020060.txt
 
@@ -132,6 +135,7 @@ The `-l` option only lists the files that contain the pattern and won't print th
 
 
 - Example 1:
+
 ```console
 > grep -r -l "archaeologist" technical
 
@@ -139,6 +143,7 @@ technical/plos/pmed.0020060.txt
 ```
 
 - Example 2:
+
 ```console
 > grep -r -l "unexpected groupings" technical
 
@@ -154,6 +159,7 @@ Source: `man grep`
 `-o` option only prints the matching part of the line
 
 - Example 1:
+
 ```console
 > grep -r -o "unexpected groupings" technical
 
@@ -162,6 +168,7 @@ technical/biomed/1471-2164-3-4.txt:unexpected groupings
 ```
 
 - Example 2:
+
 ```console
 > grep -r -o "archaeologist" technical
 
