@@ -175,6 +175,6 @@ technical/biomed/1471-2164-3-4.txt:unexpected groupings
 technical/plos/pmed.0020060.txt:archaeologist
 ```
 
-As we can see in the two examples above, `grep` only listed the matched pattern and not the entire line. This might seem like a boring option but it would be useful is we were looking for regular expression patterns rather than just words. For instance, this option would be useful to extract all the email addresses from a bunch of files.
+As we can see in the two examples above, `grep` only listed the matched pattern and not the entire line. This might seem like a boring option but it would be useful if we were looking for regular expression patterns rather than just words. For instance, this option would be useful to extract all the email addresses from a bunch of files.
 
 Source: `man grep`
